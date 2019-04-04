@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="app_name">iFun</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connected</string>
+    <string name="menu_disconnect">Unconnected</string>
+    <string name="menu_pair">Connecting</string>
+    <string name="menu_scan">scan</string>
+    <string name="menu_stop">stop</string>
+    
+    <string name="data_send_ok">Send successful</string>    
+    <string name="data_send_error">Send failed</string>   
+    
+    <string name="connect_device_confirm_connect_title">Connect device</string>   
+    <string name="connect_device_confirm_connect_info">Confirm connect device?</string>     
+    <string name="connect_device_confirm_disconnect_title">Disconnect device</string>   
+    <string name="connect_device_confirm_disconnect_info">Confirm disconnect device?</string>   
+    <string name="confirm_disconnect">Disconnect</string>            
+    <string name="confirm_connect">Connect</string>  
+    <string name="confirm_cancel">Cancel</string>
+    
+    <string name="connect_device_confirm_pair_title">Initiate pairing</string>
+    <string name="connect_device_confirm_pair_info">Confirm initiate pairing?</string>
+    <string name="connect_device_confirm_pair_ok">Confirm</string>
+    <string name="connect_device_confirm_pair_cancel">Cancel</string>
+    
+    <string name="connect_device_cancel_pair_title">Stop pairing</string>
+    <string name="connect_device_cancel_pair_info">Confirm stop pairing?</string>
+    <string name="connect_device_cancel_pair_ok">Confirm</string>  
+    <string name="connect_device_cancel_pair_cancel">Cancel</string>     
+    
+    <string name="app_name_actDiscovery">Search for Bluetooth devices</string>
+    <string name="app_name_actAbout">About us</string>
+    <string name="app_name_actKeyBoard">The keyboard controller</string>
+    <string name="btn_main_Send">Send out</string>
+    <string name="btn_yes">Confirm</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_reSearch">Search again</string>
+    <string name="btn_click_me">Keyboard</string>
+    <string name="btn_Keyboard_mode">Keyboard mode</string>
+    <string name="btn_Normal_mode">Normal mode</string>
+    <string name="menu_main_Connection">Connect device</string>
+    <string name="menu_Clear">Clear screen</string>
+    <string name="menu_main_About">About</string>
+    <string name="menu_main_IO_Mode">Input output model</string>
+    <string name="menu_keyboard_set">Set keyboard</string>
+    <string name="menu_keyboard_set_over">End keyboard settings</string>
+    <string name="et_actDiscovery_SendText_Hint">Enter the string you want to send</string>
+    <string name="rb_IO_Mode_Set_Char">String</string>
+    <string name="rb_IO_Mode_Set_Hex">Hex(00-FF)</string>
+    <string name="tv_IO_Mode_Set_Input">Input display type</string>
+    <string name="tv_IO_Mode_Set_Output">Output type</string>
+    <string name="tv_keyboard_set_BtnName">Button Name:</string>
+    <string name="tv_keyboard_set_SendValue">Send content:</string>
+    <string name="tv_actDiscovery_Receive_Show_Init">Create a Bluetooth connection. Note:please establish pairing between the mobile phone and the Bluetooth device before the first connection.</string>
+    <string name="tv_actKeyBoard_Init">By [MENU] button, you can set each key function of the keyboard.</string>
+    <string name="dialog_title_IO_Mode_Set">Input and output type setting</string>
+    <string name="dialog_title_keyboard_Set">Button Function Set</string>
+    <string name="dialog_title_Err">Error</string>
+    <string name="dialog_title_Operat_Mode">Select the operating mode</string>
+    <string name="msg_actDiscovery_Connevction_Access">Bluetooth serial port connection is successful</string>
+    <string name="msg_actDiscovery_SendBytesErr">Serial port to send data failed</string>
+    <string name="msg_actDiscovery_select_device">Select the Bluetooth device you want to connect</string>
+    <string name="msg_actDiscovery_Bluetooth_Open_Fail">Bluetooth is turned off,please quit and try again.</string>
+    <string name="msg_actDiscovery_Bluetooth_Open_Modle">Opening Bluetooth module ....</string>
+    <string name="msg_actDiscovery_Bluetooth_Open">Trying to turn on Bluetooth devices.</string>
+    <string name="msg_actDiscovery_Bluetooth_SPP_Conn_Fail">Bluetooth serial communication link failure.</string>
+    <string name="msg_actDiscovery_Search">Bluetooth device searching...</string>
+    <string name="msg_actDiscovery_Bluetooth_Bond_msg">The currently selected device is not binding,please bind and then connect</string>
+    <string name="msg_actDiscovery_Bluetooth_Bond_fail">Bluetooth devices bind failed</string>
+    <string name="msg_Hex_String_Illegal">Hexadecimal values are not legitimate</string>
+    <string name="msg_Bluetooth_conn_lost">Device connection is interrupted unexpectedly (can not communicate)</string>
+    <string name="msg_please_connect">Please establish a Bluetooth connection</string>
+    <string name="msg_please_pair">Waiting for the pairing</string>    
+    <string name="msg_connect_ok">The connection is successful!</string>
+    <string name="msg_re_connect">Please exit the program, and connect again.</string>
+    <string name="msg_connect_history">Established directly connect to the last device has been successfully connected? Please confirm that the device you want to connect has opened, and in the effective distance.</string>
+    <string name="msg_connecting">Equipment Connecting ...</string>
+    <string name="vdoply_mode">Video control</string>        
+    <string name="mp3_mode">Music control</string> 
+    <string name="pinlv_mode">Firmware upgrade</string>  
+    <string name="set_mode_air_update">Update</string>
+    <string name="set_mode_version">OS Version</string>
+    <string name="set_mode_help">Help</string>
+    <string name="set_mode_clear_connection_history">Clear connect record</string>
+    <string name="set_mode_clear_data_history">Clear use record</string>
+    <string name="set_mode_clear_msg">Confirm that you want to clear all connection records?</string>    
+    <string name="set_mode_clear_use_msg">Confirm that you want to clear all user records?</string>
+    <string name="set_mode_clear_ok">Confirm</string> 
+    <string name="set_mode_clear_cancel">Cancel</string>              
+    <string name="zhendong_strength">Adjust vibration level</string>
+    <string name="zhendong_mode">Built-mode</string>
+    <string name="zhendong_custom_mode">Custom vibration modes</string>
+    <string name="yaoyiyao_mode">Shake to vibration</string>    
+    <string name="voicectrl_mode">Voice control</string>    
+    <string name="ai_talk_mode">Intelligent voice</string> 
+    <string name="custom_mode">Private custom</string> 
+    <string name="mp3_mode_title">Music follower</string>   
+    <string name="mp3_mode_button_start">Play music</string>      
+    <string name="mp3_mode_button_stop">Stop playing</string>  
+    <string name="set_mode">Settings</string>
+    <string name="dance_mode">Dance Mode</string>
+    <string name="custom_draw_mode">Draw the vibration by yourself</string>
+    
+    <string name="pinlv_mode_stop">Stop</string> 
+        
+    <string name="dance_help">Carry your phone rocking</string> 
+            
+    <string name="yaoyiyao_help">Can you shake it to give her orgasm?</string>   
+    <string name="mp3_select_file">Select Music</string>   
+    <string name="mp3_reset_default">Set as default</string>   
+    <string name="vdoply_select_file">Select Video</string>   
+    <string name="vdoply_reset_default">Set as default</string>  
+    <string name="back_dialog_title">Exit the application</string>
+    <string name="back_dialog_mgs">Are you sure you want to end the application?</string>    
+    <string name="back_dialog_ok">Confirm</string>  
+    <string name="back_dialog_cancle">Cancel</string>  
+    
+    <string name="zhendong_strength_1">Felt a strength</string>   
+    <string name="zhendong_strength_2">Two felt strength</string>      
+    <string name="zhendong_strength_3">Three felt strength</string>   
+    <string name="zhendong_strength_4">Four felt strength</string>   
+    <string name="zhendong_strength_5">Five felt strength</string>      
+    <string name="zhendong_strength_6">Six felt the intensity</string> 
+    <string name="zhendong_strength_7">Seven felt strength</string>     
+    <string name="zhendong_strength_stop">Stop</string>  
+    <string name="zhendong_strength_set">The vibration intensity is set to</string>     
+    
+    <string name="cannect_status">Connection status: Not connected</string>      
+    <string name="click_to_start">Click to start</string>
+    <string name="click_to_stop">Click Stop</string>  
+    <string name="voicecmdbuttonstr">Long press recognition</string>
+
+    <string name="voice_ctr_yuancheng_help">Please choose the APP to connect</string>    
+    <string name="voice_ctr_yuancheng_info">Please open the corresponding procedures to control vibration</string>      
+    <string name="voice_ctr_yuancheng_title">Interactive remote control</string>
+    <string name="voice_ctr_yuancheng_back_info">The system has been running in the background automatically</string>
+    <string name="voice_ctr_yuancheng_wenxin">We chat\nVoice/Video</string>
+    <string name="voice_ctr_yuancheng_qq">QQ\nVoice/Video</string>
+    <string name="voice_ctr_yuancheng_call">Phone\nVoice/Video</string>
+
+    <!-- FWUpdate activity -->
+    <string name="fwupdate_oad_service_initialisationfailed">OAD service initialisation failed</string>
+    <string name="fwupdate_get_target_info_failed">Failed to get target info</string>
+    <string name="fwupdate_failed">Update failed</string>
+    <!-- <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>  -->
+    <string name="prog_ogoing">Close the application does not allow when upgrading process</string>
+    <string name="download_image">Update</string>
+    <string name="no_image">Not oad file</string>
+    <string name="ai_talk_prev">upward</string>
+    <string name="ai_talk_next">downward</string>
+    <string name="ai_talk_less">weaker</string>
+    <string name="ai_talk_more">stronger</string>
+    <string name="ai_talk_stop">stop</string>
+    <string name="zhendong_item_01">stroke</string>
+    <string name="zhendong_item_02">titillation</string>
+    <string name="zhendong_item_03">dominate</string>
+    <string name="zhendong_item_04">orgasm</string>
+    <string name="zhendong_item_05">wallow</string>
+    <string name="zhendong_item_06">deeply</string>
+    <string name="zhendong_item_07">ebullient</string>
+    <string name="zhendong_item_08">violent</string>
+    <string name="zhendong_item_09">gentle</string>
+    <string name="zhendong_item_10">tonguekiss</string>
+    <string name="zhendong_item_11">powerful</string>
+    <string name="zhendong_item_12">tremble</string>
+    <string name="zhendong_item_13">wild</string>
+    <string name="zhendong_item_14">licking</string>
+    <string name="zhendong_item_15">obsessed</string>
+    <string name="zhendong_item_16">enjoyable</string>
+    <string name="zhendong_custom_help">Try to drag the patterns into the space below to be freely combined</string>
+    <string name="zhendong_custom_toast">Please select at least one mode</string>
+    <string name="music_mode_default_name">Default music</string>
+    <string name="video_mode_default_name">Default Video</string>
+    <string name="oad_file_error">The new version of the firmware is not found</string>   
+    <string name="oad_file_old_version">the latest firmware</string>   
+    <string name="oad_file_not_product">product firmware don\'t match</string>   
+    <string name="oad_file_help">1,Equipment system upgrade is the optimization. Customers in the purchase of products can conveniently use the equipment optimization and upgrading services at any time.\n2,Make sure the phone and the toy has enough power.\n3,Don\'t disconnect the device and the phone\'s Bluetooth connection in the upgrade process.\n4,If there is an interruption, the next time will be re-upgrade.\n5,Please put the update files (AppA.bin &amp; AppB.bin) into the fwupdate folder</string>  
+    <string name="oad_update_complete">The upgrade is complete</string>   
+    
+    <string name="battery_low_notify">Low battery</string>  
+    <string name="battery_low_msg">The battery of toys is low,please charge,otherwise it will damage the battery.</string>      
+    <string name="battery_low_button">Cancel</string>    
+    <string name="msg_device_confirm_pair">Equipment by pairing, the connection is successful</string>      
+    <string name="msg_device_cancel_pair">Device rejected pairing, disconnect</string>      
+    <string name="custom_draw_mode_info">Draw a curve you want in the frame and press play, you can redraw it anytime</string>
+    <string name="custom_draw_mode_start_help">Review the last vibration</string>
+    
+    <string name="ai_talk_help">Please press the button for a long time to change the words as you like, then you can control the toy with speak the words you changed.</string>
+    <string name="ai_talk_info">Press to speak,then release</string>
+    <string name="ai_talk_current_mode">Mode\n</string>
+    <string name="ai_talk_current_level">Strength\n</string>
+    <string name="ai_talk_edit_dialog_title">Edit voice commands(%1$d characters most)</string>
+    <string name="ai_talk_edit_dialog_ok">Confirm</string>
+    <string name="ai_talk_edit_dialog_cancel">Cancel</string>
+    <string name="ai_talk_edit_dialog_too_short">The command you entered is too short</string>
+    <string name="msg_device_bluetooth_error">please check the bluetooth of devices</string>     
+    <string name="set_mode_app_version">APK ver:</string>
+    <string name="set_mode_fw_version">FirmWare Version:</string>
+    <string name="set_mode_fw_version_unknown">Unknown version</string>
+    <string name="main_connect_state_shake">Boot device，then shake the phone to connect</string>
+    <string name="main_connect_no_toy">No toy turn on</string>
+    <string name="main_connect_close_others">The system detects multiple toys, unable to connect, turn off all the other toys</string>
+    <string name="main_connect_state_long_press_to_confirm">Long press the smart key on the toy to confirm connection</string>
+    <string name="main_connect_state_success">Connected successful</string>
+    <string name="main_connect_state_success_beautiful">More pleasure more beautiful</string>
+    <string name="main_connect_state_click_again_to_disconnect">Click again to disconnect</string>
+    <string name="main_connect_state_closing_device">closing toy...</string>
+    <string name="battery_mode">Power remind</string>
+    <string name="battery_mode_full">Adequate power, please enjoy</string>
+    <string name="battery_mode_low">Power is less than 20%, please charge</string>
+    <string name="app_not_installed">Please install the app!</string>
+    <string name="dialog_tips">Tips</string>
+    
+    <!-- force update firmware -->
+    <string name="force_update">Update</string>
+    <string name="force_update_firmware">Firmware Update</string>
+    <string name="force_update_firmware_message">Detected new firmware, in order to ensure the ultimate experience, please update!</string>
+    <string name="force_updating_firmware">Updating firmware</string>
+    <string name="oad_file_help_force">1,Make sure the phone and the toy has enough power, do not abort the program during the update process, do not shut off the screen\n\n2,During upgrade process, make sure Bluetooth communication is good</string> 
+        
+    <!--game mode:wangfei added-->
+    <string name="game_mode">Game Mode</string>
+    <string name="game_mode_tips">Make fun in the game.</string>
+    <string name="game_mode_size">Size::<xliff:g id="size">%s</xliff:g></string>
+    <string name="game_mode_download">Download</string>
+    <string name="game_mode_install">Install</string>
+    <string name="game_mode_downloading">Downloading</string>
+    <string name="game_mode_pause">Pause</string>
+    <string name="game_mode_start">Start</string>
+    <string name="network_error">Network error,please try it later</string>
+    <string name="download_network_wrong">Network error</string>
+    <string name="download_no_sdcard">Faill to download,can not find the SDcard </string>
+    <string name="download_no_enough_storage">Faill to download,storage is not enough</string>
+    
+    <string name="product_name">iFun</string>
+    <string name="close_device">shut\ndown</string>
+    <string name="music_title">Music</string>
+    <string name="video_title">Video</string>
+    <string name="game_title">Game</string>
+    <string name="dance_title">Dance</string>
+    <string name="handdraw_title">Draw</string>
+    <string name="sing_title">Sing</string>
+    <string name="tips_title">After cleaning,use it with lubricating oil</string>
+    <string name="open_device_title">Tips</string>
+    <string name="open_device_massage">Need to open devices,will you?</string>
+    <string name="open_device_yes">Yes</string>
+    <string name="open_device_no">No</string>
+    <string name="basic_mode">Basic Mode</string>
+    <string name="basic_mode_tips">Meet the demand,is good for your healthy</string>
+    <string name="basic_mode_levle">Level: <xliff:g id="levle">%d</xliff:g></string>
+    <string name="basic_voice_mode">Acoustic Control</string>
+    <string name="basic_mode_voice_tips">Press the button,call faster\\slower\\stop\\start,\nLoosen the button to switch the instruction</string>
+    <string name="basic_voice_order_1">Bigger</string>
+    <string name="basic_voice_order_2">Faster</string>
+    <string name="basic_voice_order_3">Smaller</string>
+    <string name="basic_voice_order_4">Slower</string>
+    <string name="basic_voice_order_5">Stop</string>
+    <string name="basic_voice_order_6">Start</string>
+    <string name="basic_voice_max">(max)</string>
+    <string name="basic_voice_pause">(pause)</string>
+    <string name="classic_mode">Classic Mode</string>
+    <string name="dance_tips">Dance with your phone</string>
+    <string name="hand_draw_mode">Draw Mode</string>
+    <string name="hand_draw_mode_tips">Draw a curve you want in the frame and press play, you can redraw it anytime</string>
+    <string name="sing_mode">Singing Mode</string>
+    <string name="music_mode">Music Mode</string>
+    <string name="music_mode_operation_tips">sliding left/right to change music</string>
+    <string name="music_add">Add music</string>
+    <string name="music_add_done">Done</string>
+    <string name="video_mode">Video Mode</string>
+    <string name="video_add">Add videos</string>
+    <string name="video_add_done">Done</string>
+    <string name="remote_mode">Remote Control</string>
+    <string name="remote_mode_tips_title">You can start a remote video chat with others.\nThen the equipment will be controlled by their voices.</string>
+    <string name="remote_mode_add">+Start a remote control</string>
+    <string name="remote_mode_link_prefix">Remote control</string>
+    <string name="remote_mode_edit">Edit</string>
+    <string name="remote_mode_cancel">Cancel</string>
+    <string name="remote_mode_link_max">Up to five, please delete one then continue</string>
+    <string name="remote_mode_null_connection_tips">Need to open the network to start a remote control</string>
+    <string name="remote_mode_add_info_title">Start a new remote control</string>
+    <string name="remote_mode_next">Next</string>
+    <string name="remote_mode_dialog_tips">Tips</string>
+    <string name="remote_mode_dialog_len_massage">Please enter 8 digits</string>
+    <string name="remote_mode_send">send</string>
+    <string name="remote_mode_send_title">send message</string>
+    <string name="remote_mode_send_dialog_message">enter the phone number:</string>
+    <string name="remote_mode_send_wrong_number">Please enter the correct phone number</string>
+    <string name="remote_mode_message_content">Password:<xliff:g id="version">%d</xliff:g></string>
+    <string name="remote_mode_sending">sending</string>
+    <string name="remote_mode_send_success">send successfully</string>
+    <string name="remote_mode_send_failed">failed to send</string>
+    <string name="remote_mode_weixin_not_installed">please install Wechat</string>
+    <string name="remote_mode_name_tips">Give it a name!</string>
+    <string name="remote_mode_null_name_tips">Give it a name or skip</string>
+    <string name="remote_mode_skip">Skip</string>
+    <string name="remote_mode_ok">Yes</string>
+    <string name="remote_mode_finish">Finished</string>
+    <string name="remote_mode_launcher">I\'m inviter: send a invitation to him/her</string>
+    <string name="remote_mode_receiver">I\'m invitee: enter the invited password</string>
+    <string name="remote_mode_invitation_code">password</string>
+    <string name="remote_mode_send_to">send to</string>
+    <string name="remote_mode_wrong_room_id">the password is wrong</string>
+    <string name="remote_mode_connect_message">Waiting for him/her</string>
+    <string name="remote_mode_connect_message_enter">Here he/she comes \nClick his/her icon to start</string>
+    <string name="remote_mode_connect_timeout">connection timeout</string>
+    <string name="remote_mode_disconnect_message">Network disconnected</string>
+    <string name="remote_mode_person_video_interrupt">His/Her video is interrupted</string>
+    <string name="remote_mode_person_audio_interrupt">His/Her audio is interrupted</string>
+    <string name="remote_mode_person_offline">He/She is offline</string>
+    <string name="remote_mode_exit_remote">Are you sure to exit?</string>
+    <string name="remote_mode_secure_tips">The encrypted data is sent directly to the user\nWe only transfer data, do not retain any data</string>
+    <string name="set_mode_app_check">Check APP version</string>
+    <string name="set_mode_app_check_tips">Need to open the network to check update</string>
+    <string name="set_mode_apk_version">version:V<xliff:g id="version">%s</xliff:g></string>
+    <string name="set_mode_firmware_update">Firmware update</string>
+    <string name="set_mode_firmware_version">firmware version<xliff:g id="version">%s</xliff:g></string>
+    <string name="set_mode_checking">checking version</string>
+    <string name="set_mode_latest_version">the latest version</string>
+    <string name="set_mode_powered_by">powered by:无锡宇宁光电科技有限公司</string>
+    <string name="dialog_battery_low_title">Lower power attention</string>
+    <string name="dialog_battery_low_message">Lower power,the toy needs to charge</string>
+    <string name="dialog_battery_extremely_low_title">Lower power warning</string>
+    <string name="dialog_battery_extremely_low_message">Equipment is shut down soon for lower power, please charge!</string>
+    <string name="scanning_device">scanning toy</string>
+    <string name="connecting_device">connecting toy, please wait</string>
+    <string name="find_multi_devices">detect some toys, please select</string>
+    <string name="device_toy">toy</string>
+    <string name="device_has_been_connected">has been connected</string>
+    <string name="device_has_not_been_connected">has not been connected</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="password_settings">Set password</string>
+    <string name="password_tips">You need to enter a password to access the software after setting up</string>
+    <string name="password_open">Turn on password</string>
+    <string name="password_close">Turn off password</string>
+    <string name="password_change">Change password</string>
+    <string name="password_set">Create password</string>
+    <string name="password_input">Enter password</string>
+    <string name="password_input_please">Please enter password</string>
+    <string name="password_input_again_please">Confirm password</string>
+    <string name="password_input_old_please">Enter your old password</string>
+    <string name="password_input_new_please">Set a new password</string>
+    <string name="password_input_new_again_please">Confirm the new password</string>
+    <string name="password_input_again_wrong_please">Password do not match. Please try again.</string>
+    <string name="password_input_one_minute_retry">Please try it again in a minute</string>
+    <string name="password_input_error"><xliff:g id="number">%d</xliff:g> Failed Password Attempt</string>
+    <string name="shopping_tips"><u>More wonderful things!</u></string>
+    <string name="shopping_title">Commodity list</string>
+    <string name="shopping_loading">Loading</string>
+</resources>

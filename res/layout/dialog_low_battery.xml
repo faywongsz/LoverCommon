@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:background="@drawable/dialog_title_background" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_battery_low_title"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_margin"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/dialog_low_battery_image"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/battery_level_low" />
+
+        <TextView
+            android:id="@+id/dialog_low_battery_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_low_battery_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/layout_margin"
+            android:text="@string/dialog_battery_low_message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+</LinearLayout>

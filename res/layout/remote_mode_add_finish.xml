@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_common" >
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/remote_mode_name_tips"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/pink_tips" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:gravity="center" >
+            
+            <EditText
+                android:id="@+id/remote_mode_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@drawable/remote_mode_info_bg"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/pink_tips" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/remote_mode_skip_btn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/remote_mode_skip"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/white"
+                android:background="@drawable/remote_mode_finish_btn_bg_selector" />
+
+            <View 
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            
+            <Button
+                android:id="@+id/remote_mode_ok_btn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/remote_mode_ok"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/white"
+                android:background="@drawable/remote_mode_finish_btn_bg_selector" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"/>
+</LinearLayout>

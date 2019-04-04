@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/yuning/activity/BasicVoiceMode.java" />
+        <ignore path="src/com/yuning/activity/CustomDrawMode.java" />
+        <ignore path="src/com/yuning/remote/RemoteModeAddFinish.java" />
+        <ignore path="src/com/yuning/remote/RemoteModeAddInfo.java" />
+        <ignore path="src/com/yuning/ui/ArcMenu.java" />
+        <ignore path="src/com/yuning/view/MyVerticalSeekBar.java" />
+    </issue>
+    <issue id="ExtraTranslation" severity="ignore" />
+    <issue id="HandlerLeak">
+        <ignore path="src/com/bairuitech/helloanychat/MainActivity.java" />
+        <ignore path="src/com/bairuitech/helloanychat/VideoActivity.java" />
+        <ignore path="src/com/yuning/activity/BasicVoiceMode.java" />
+        <ignore path="src/com/yuning/activity/CustomDrawMode.java" />
+        <ignore path="src/com/yuning/activity/MusicMode.java" />
+        <ignore path="src/com/yuning/activity/VideoMode.java" />
+    </issue>
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/yuning/util/LoadThumbnail.java" />
+    </issue>
+</lint>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/ai_talk_voice_line01" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line02" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line03" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line04" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line05" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line06" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line07" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line08" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line09" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line10" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line11" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line12" android:duration="100"></item>
+    <item android:drawable="@drawable/ai_talk_voice_line13" android:duration="100"></item>
+
+</animation-list>

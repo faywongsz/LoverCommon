@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<ESRGrammar>
+	<scene name="menu">
+		<sentence name="call" ID="10000">
+			<listref ref="names"/>
+		</sentence>
+		<sentence name="call1" ID="10010">
+			打电话给`电话`打给`给我接`呼叫`拨打
+			<listref ref="names"/>
+		</sentence>
+		<sentence name="call2" ID="10011">
+			给
+			<listref ref="names"/>
+			打电话
+		</sentence>
+		<sentence name="sms1" ID="10020">
+			发短信给`发信息给`短信
+			<listref ref="names"/>
+		</sentence>
+		<sentence name="sms2" ID="10021">
+			给
+			<listref ref="names"/>
+			发短信`发信息
+		</sentence>
+	</scene>
+	<list name="names">
+		<word ID="1">张三</word>
+		<word ID="2">李四</word>
+		<word ID="3">王五</word>
+	</list>	
+</ESRGrammar>

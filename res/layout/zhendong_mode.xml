@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:id="@+id/rl_main" 
+    android:focusable="true" 
+    android:focusableInTouchMode="true" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+ <LinearLayout android:orientation="horizontal" 
+        android:id="@+id/ly_keyboard_btn_Area_1" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+      >
+        <Button android:id="@+id/btn_keyboard_4" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/zhendong_strength_4" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />
+        <Button android:id="@+id/btn_keyboard_5" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/zhendong_strength_5" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />
+        <Button android:id="@+id/btn_keyboard_6" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/zhendong_strength_6" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />      
+
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" 
+        android:id="@+id/ly_keyboard_btn_Area_2" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_above="@id/ly_keyboard_btn_Area_1"
+      >
+        <Button android:id="@+id/btn_keyboard_1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/zhendong_strength_1" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />
+        <Button android:id="@+id/btn_keyboard_2" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/zhendong_strength_2" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />
+        <Button android:id="@+id/btn_keyboard_3" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/zhendong_strength_3" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" 
+        android:id="@+id/ly_keyboard_btn_Area_3" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_above="@id/ly_keyboard_btn_Area_2"
+      >
+        <Button android:id="@+id/btn_keyboard_7" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:text="@string/pinlv_mode_stop" android:layout_weight="1.0" android:onClick="onBtnClick_Array" />
+    </LinearLayout>    
+        
+  
+</RelativeLayout>

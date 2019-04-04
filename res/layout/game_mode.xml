@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_common">
+ 	<ProgressBar
+	     android:id="@+id/pb"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_centerHorizontal="true"
+	     android:layout_centerVertical="true" />
+
+ 	<LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="fill_parent"
+    	android:layout_marginLeft="@dimen/layout_margin"
+    	android:layout_marginRight="@dimen/layout_margin"
+ 	    android:orientation="vertical" >
+
+ 		<TextView
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content"
+ 		    android:paddingTop="@dimen/layout_margin"
+ 		    android:paddingBottom="@dimen/layout_margin"
+ 		    android:text="@string/game_mode_tips"
+ 		    android:textColor="#ff7c0d32"
+ 		    android:textSize="@dimen/text_size_medium" />
+
+ 		<GridView
+ 		    android:id="@+id/gridview"
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent"
+        	android:scrollbars="none"
+        	android:drawSelectorOnTop="false"
+        	android:listSelector="@null"
+ 		    android:numColumns="2"
+ 		    android:horizontalSpacing="2dp"
+ 		    android:verticalSpacing="2dp" >
+ 		</GridView>
+
+ 	</LinearLayout>
+</RelativeLayout>  	    

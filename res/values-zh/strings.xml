@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">闺趣</string>
+    <string name="ble_not_supported">不支持蓝牙4.0</string>
+    <string name="label_data">数据:</string>
+    <string name="label_device_address">设备地址:</string>
+    <string name="label_state">状态:</string>
+    <string name="no_data">没有数据</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">断开连接</string>
+    <string name="title_devices">扫描设备</string>
+    <string name="error_bluetooth_not_supported">不支持蓝牙</string>
+
+    <string name="unknown_device">未知设备</string>
+    <string name="unknown_characteristic">未知特征</string>
+    <string name="unknown_service">未知服务</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">已连接</string>
+    <string name="menu_disconnect">未连接</string>
+    <string name="menu_pair">配对中</string>    
+    <string name="menu_scan">扫描</string>
+    <string name="menu_stop">停止</string>
+    
+    <string name="data_send_ok">发送成功</string>    
+    <string name="data_send_error">发送失败</string>   
+    
+    <string name="connect_device_confirm_connect_title">连接设备</string>   
+    <string name="connect_device_confirm_connect_info">确认连接设备？</string>     
+    <string name="connect_device_confirm_disconnect_title">断开设备</string>   
+    <string name="connect_device_confirm_disconnect_info">确认断开设备？</string>   
+    <string name="confirm_disconnect">断开</string>            
+    <string name="confirm_connect">连接</string>  
+    <string name="confirm_cancel">取消</string>
+    
+    <string name="connect_device_confirm_pair_title">发起配对</string>  
+    <string name="connect_device_confirm_pair_info">确认发起配对？</string>          
+    <string name="connect_device_confirm_pair_ok">确认</string>  
+    <string name="connect_device_confirm_pair_cancel">取消</string>  
+    
+    <string name="connect_device_cancel_pair_title">停止配对</string>  
+    <string name="connect_device_cancel_pair_info">确认确认停止配对？</string>          
+    <string name="connect_device_cancel_pair_ok">确认</string>  
+    <string name="connect_device_cancel_pair_cancel">取消</string>     
+    
+    <string name="app_name_actDiscovery">搜索蓝牙设备</string>
+    <string name="app_name_actAbout">关于我们</string>
+    <string name="app_name_actKeyBoard">键盘控制器</string>
+    <string name="btn_main_Send">发送</string>
+    <string name="btn_yes">确定</string>
+    <string name="btn_connect">连接</string>
+    <string name="btn_reSearch">重新搜索</string>
+    <string name="btn_click_me">按键</string>
+    <string name="btn_Keyboard_mode">键盘模式</string>
+    <string name="btn_Normal_mode">普通模式</string>
+    <string name="menu_main_Connection">连接设备</string>
+    <string name="menu_Clear">清屏</string>
+    <string name="menu_main_About">关于</string>
+    <string name="menu_main_IO_Mode">输入输出模式</string>
+    <string name="menu_keyboard_set">设置键盘</string>
+    <string name="menu_keyboard_set_over">键盘设置结束</string>
+    <string name="et_actDiscovery_SendText_Hint">输入需要发送的字符串</string>
+    <string name="rb_IO_Mode_Set_Char">字符串</string>
+    <string name="rb_IO_Mode_Set_Hex">Hex(00-FF)</string>
+    <string name="tv_IO_Mode_Set_Input">输入显示类型</string>
+    <string name="tv_IO_Mode_Set_Output">输出类型</string>
+    <string name="tv_keyboard_set_BtnName">按钮名称:</string>
+    <string name="tv_keyboard_set_SendValue">发送内容:</string>
+    <string name="tv_actDiscovery_Receive_Show_Init">创建蓝牙设备连接。 提示：第一次连接前请先建立手机与蓝牙设备的配对</string>
+    <string name="tv_actKeyBoard_Init">通过【MENU】键，可设置键盘的每个按键功能。</string>
+    <string name="dialog_title_IO_Mode_Set">输入输出类型设置</string>
+    <string name="dialog_title_keyboard_Set">按钮功能设置</string>
+    <string name="dialog_title_Err">错误</string>
+    <string name="dialog_title_Operat_Mode">选择操作模式</string>
+    <string name="msg_actDiscovery_Connevction_Access">蓝牙串口连接成功</string>
+    <string name="msg_actDiscovery_SendBytesErr">串口发送数据失败</string>
+    <string name="msg_actDiscovery_select_device">选择需要连接的蓝牙设备</string>
+    <string name="msg_actDiscovery_Bluetooth_Open_Fail">蓝牙未开启，请退出重试.</string>
+    <string name="msg_actDiscovery_Bluetooth_Open_Modle">正在打开蓝牙模块....</string>
+    <string name="msg_actDiscovery_Bluetooth_Open">正在尝试开启蓝牙设备.</string>
+    <string name="msg_actDiscovery_Bluetooth_SPP_Conn_Fail">蓝牙设备串口通讯连接失败。</string>
+    <string name="msg_actDiscovery_Search">蓝牙设备搜索中...</string>
+    <string name="msg_actDiscovery_Bluetooth_Bond_msg">当前选择的设备未绑定，请绑定后再连接</string>
+    <string name="msg_actDiscovery_Bluetooth_Bond_fail">蓝牙设备绑定失败</string>
+    <string name="msg_Hex_String_Illegal">16进制值不合法</string>
+    <string name="msg_Bluetooth_conn_lost">设备连接意外中断(无法正常通信)</string>
+    <string name="msg_please_connect">请先建立蓝牙连接</string>
+    <string name="msg_please_pair">正在等待配对</string>    
+    <string name="msg_connect_ok">连接成功!</string>
+    <string name="msg_re_connect">请退出程序后，再连接。</string>
+    <string name="msg_connect_history">直接建立上次已成功连接的设备连接？ 请确认需要连接的设备已开起，并且在有效距离内。</string>
+    <string name="msg_connecting">设备连接中...</string>
+    <string name="vdoply_mode">视频播放</string>        
+    <string name="mp3_mode">音乐模式</string> 
+    <string name="pinlv_mode">升级固件</string>  
+    <string name="set_mode_air_update">空中升级</string>
+    <string name="set_mode_version">固件版本</string>
+    <string name="set_mode_help">帮助</string>
+    <string name="set_mode_clear_connection_history">清除连接记录</string>
+    <string name="set_mode_clear_data_history">清除使用记录</string>
+    <string name="set_mode_clear_msg">确认要清除所有连接记录？</string>    
+    <string name="set_mode_clear_use_msg">确认要清除所有使用记录？</string>
+    <string name="set_mode_clear_ok">确认</string> 
+    <string name="set_mode_clear_cancel">取消</string>              
+    <string name="zhendong_strength">震感强度</string>
+    <string name="zhendong_mode">震动模式</string>
+    <string name="zhendong_custom_mode">自定义震动模式</string>
+    <string name="yaoyiyao_mode">摇一摇</string>    
+    <string name="voicectrl_mode">声音控制</string>    
+    <string name="ai_talk_mode">智能语音</string> 
+    <string name="custom_mode">私人订制</string> 
+    <string name="mp3_mode_title">音乐随动</string>   
+    <string name="mp3_mode_button_start">播放音乐</string>      
+    <string name="mp3_mode_button_stop">停止播放</string>  
+    <string name="set_mode">设置</string>
+    <string name="dance_mode">舞动模式</string>
+    <string name="custom_draw_mode">手绘模式</string>
+
+    <string name="pinlv_mode_stop">停止</string> 
+        
+    <string name="dance_help">带上你的手机尽情摇摆吧</string> 
+            
+    <string name="yaoyiyao_help">你能摇到让她高潮吗？</string>   
+    <string name="mp3_select_file">选择音乐</string>   
+    <string name="mp3_reset_default">设为默认</string>   
+    <string name="vdoply_select_file">选择视频</string>   
+    <string name="vdoply_reset_default">设为默认</string>  
+    <string name="back_dialog_title">退出应用</string>
+    <string name="back_dialog_mgs">确认要结束该应用？</string>    
+    <string name="back_dialog_ok">确认</string>  
+    <string name="back_dialog_cancle">取消</string>
+    
+    <string name="zhendong_strength_1">震感强度一</string>   
+    <string name="zhendong_strength_2">震感强度二</string>      
+    <string name="zhendong_strength_3">震感强度三</string>   
+    <string name="zhendong_strength_4">震感强度四</string>   
+    <string name="zhendong_strength_5">震感强度五</string>      
+    <string name="zhendong_strength_6">震感强度六</string> 
+    <string name="zhendong_strength_7">震感强度七</string>     
+    <string name="zhendong_strength_stop">停止</string>  
+    <string name="zhendong_strength_set">震动强度设置为</string>      
+    
+    <string name="cannect_status">连接状态：未连接</string>      
+    <string name="click_to_start">点击开始</string>
+    <string name="click_to_stop">点击停止</string>  
+    <string name="voicecmdbuttonstr">长按识别</string>
+
+    <string name="voice_ctr_yuancheng_help">请选择以下方式建立连接\n实现远程互动</string>    
+    <string name="voice_ctr_yuancheng_info">请打开相应的程序来控制震动</string>      
+    <string name="voice_ctr_yuancheng_title">远程异地控制</string>
+    <string name="voice_ctr_yuancheng_back_info">本系统已自动进入后台运行</string>
+    <string name="voice_ctr_yuancheng_wenxin">微信语音\n视频连接</string>
+    <string name="voice_ctr_yuancheng_qq">QQ语音\n视频连接</string>
+    <string name="voice_ctr_yuancheng_call">电话语音\n视频连接</string>
+
+    <!-- FWUpdate activity -->
+    <string name="fwupdate_oad_service_initialisationfailed">空中升级服务初始化失败</string>
+    <string name="fwupdate_get_target_info_failed">获取设备信息失败</string>
+    <string name="fwupdate_failed">升级失败</string>
+    <!-- <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>  -->
+    <string name="prog_ogoing">升级过程中不允许关闭应用！</string>
+    <string name="download_image">检查更新</string>
+    <string name="no_image">不是oad文件</string>
+    <string name="ai_talk_prev">上一模式</string>
+    <string name="ai_talk_next">下一模式</string>
+    <string name="ai_talk_less">震感减弱</string>
+    <string name="ai_talk_more">震感加强</string>
+    <string name="ai_talk_stop">停止</string>
+    <string name="zhendong_item_01">你侬我侬</string>
+    <string name="zhendong_item_02">心颤酥麻</string>
+    <string name="zhendong_item_03">一骑绝尘</string>
+    <string name="zhendong_item_04">在仙之巅</string>
+    <string name="zhendong_item_05">轮震车摆</string>
+    <string name="zhendong_item_06">情深似海</string>
+    <string name="zhendong_item_07">激情澎湃</string>
+    <string name="zhendong_item_08">翻云覆雨</string>
+    <string name="zhendong_item_09">温情脉脉</string>
+    <string name="zhendong_item_10">口吻生花</string>
+    <string name="zhendong_item_11">水注如柱</string>
+    <string name="zhendong_item_12">花枝轻颤</string>
+    <string name="zhendong_item_13">勇猛狂野</string>
+    <string name="zhendong_item_14">蜻蜓点水</string>
+    <string name="zhendong_item_15">一往情深</string>
+    <string name="zhendong_item_16">沉溺忘情</string>
+    <string name="zhendong_custom_help">把上面的模式拖到下面的圆圈中进行组合播放</string>
+    <string name="zhendong_custom_toast">请至少选择一种模式</string>
+    <string name="music_mode_default_name">默认音乐</string>
+    <string name="video_mode_default_name">默认视频</string>
+    <string name="oad_file_error">未找到固件文件</string>   
+    <string name="oad_file_old_version">已是最新版本固件</string>   
+    <string name="oad_file_not_product">固件产品型号不对</string>   
+    <string name="oad_file_help">1. 设备系统升级是指设备宝贝系统的优化升级。方便客户在购买产品后，随时能享受设备优化升级服务。\n2. 请确保设备和手机有充足的电量。\n3. 升级过程中，不要断开设备和手机的蓝牙连接。\n4. 升级过程中，如果发生中断，下次将重新升级。\n5. 请把用来升级的固件文件 （AppA.bin 及 AppB.bin）放在手机内存卡的fwupdate目录. </string>       
+    <string name="oad_update_complete">升级完成</string>   
+    
+    <string name="battery_low_notify">电池电量低</string>  
+    <string name="battery_low_msg">玩具电量低，请及时充电，否则会损伤电池</string>      
+    <string name="battery_low_button">取消</string>    
+    <string name="msg_device_confirm_pair">设备通过配对，连接成功</string>      
+    <string name="msg_device_cancel_pair">设备拒绝配对，断开连接</string>      
+    <string name="custom_draw_mode_info">试试看，在图框内画出你想要的震动曲线然后点击播放键，不满意可以直接重画哦</string>
+    <string name="custom_draw_mode_start_help">启动上一次录入</string>
+    
+    <string name="ai_talk_help">请长按相应的功能键，输入自定义文字\n通过自定义好的文字,即可操作宝贝</string>
+    <string name="ai_talk_info">按住此键说出指令,然后松开</string>
+    <string name="ai_talk_current_mode">当前模式\n</string>
+    <string name="ai_talk_current_level">当前强度\n</string>
+    <string name="ai_talk_edit_dialog_title">编辑语音指令(最多%1$d个字符)</string>
+    <string name="ai_talk_edit_dialog_ok">确认</string>
+    <string name="ai_talk_edit_dialog_cancel">取消</string>
+    <string name="ai_talk_edit_dialog_too_short">您输入的指令太短</string>
+    <string name="msg_device_bluetooth_error">请查看蓝牙连接是否正常</string>     
+    <string name="set_mode_app_version">应用程序版本：</string>
+    <string name="set_mode_fw_version">固件版本：</string>
+    <string name="set_mode_fw_version_unknown">未知版本</string>
+    <string name="main_connect_state_shake">先启动宝贝再摇一摇手机连接</string>
+    <string name="main_connect_no_toy">未搜索到宝贝</string>
+    <string name="main_connect_close_others">系统检测到多个宝贝，无法连接，请关闭其它所有宝贝</string>
+    <string name="main_connect_state_long_press_to_confirm">请长按宝贝上的智能键2秒确认连接</string>
+    <string name="main_connect_state_success">宝贝连接成功</string>
+    <string name="main_connect_state_success_beautiful">幸福的女人最美丽</string>
+    <string name="main_connect_state_click_again_to_disconnect">再次点击，关闭宝贝</string>
+    <string name="main_connect_state_closing_device">正在关闭宝贝...</string>
+    <string name="battery_mode">电量提醒</string>
+    <string name="battery_mode_full">电量充足，请尽情使用</string>
+    <string name="battery_mode_low">电量低于20%，请及时充电</string>
+    <string name="app_not_installed">请安装相关应用程序!</string>
+    <string name="dialog_tips">提示</string>
+    
+    <!-- force update firmware -->
+    <string name="force_update">更新</string>
+    <string name="force_update_firmware">固件更新</string>
+    <string name="force_update_firmware_message">检测到有固件更新，为保证极致体验，请务必更新！</string>
+    <string name="force_updating_firmware">正在更新固件</string>
+    <string name="oad_file_help_force"> 1. 请确保手机和设备有足够的电量,更新过程中不要终止程序，不要熄屏。\n\n 2. 升级过程中请确保蓝牙通讯正常。</string>      
+        
+    <!--game mode:wangfei added-->
+    <string name="game_mode">游戏模式</string>
+    <string name="game_mode_tips">不仅能和你玩，还能和你嗨～</string>
+    <string name="game_mode_size">软件大小:<xliff:g id="size">%s</xliff:g></string>
+    <string name="game_mode_download">下载</string>
+    <string name="game_mode_install">安装</string>
+    <string name="game_mode_downloading">下载中</string>
+    <string name="game_mode_pause">暂停</string>
+    <string name="game_mode_start">启动</string>
+    <string name="network_error">网络不可用,请稍后再试</string>
+    <string name="download_network_wrong">当前网络异常</string>
+    <string name="download_no_sdcard">下载失败 没有找到sd卡 </string>
+    <string name="download_no_enough_storage">下载失败  SD卡 空间不足</string>
+    
+    <string name="product_name">闺&#160;趣</string>
+    <string name="close_device">关\n宝贝</string>
+    <string name="music_title">音乐</string>
+    <string name="video_title">视频</string>
+    <string name="game_title">游戏</string>
+    <string name="dance_title">舞动</string>
+    <string name="handdraw_title">手绘</string>
+    <string name="sing_title">歌唱</string>
+    <string name="tips_title">温馨提示:将宝贝清洁后,与润滑油配合使用</string>
+    <string name="open_device_title">温馨提示</string>
+    <string name="open_device_massage">需先连接宝贝才可用,是否前去连接?</string>
+    <string name="open_device_yes">前往连接</string>
+    <string name="open_device_no">暂时不用</string>
+    <string name="basic_mode">基本模式</string>
+    <string name="basic_mode_tips">正视正常生理需求，是科学的生活方式</string>
+    <string name="basic_mode_levle">震感<xliff:g id="levle">%d</xliff:g>级</string>
+    <string name="basic_voice_mode">声控模式</string>
+    <string name="basic_mode_voice_tips">按住上方按钮,喊快 、慢、停、开始\n松开后,重新按住可切换语音指令</string>
+    <string name="basic_voice_order_1">大</string>
+    <string name="basic_voice_order_2">快</string>
+    <string name="basic_voice_order_3">小</string>
+    <string name="basic_voice_order_4">慢</string>
+    <string name="basic_voice_order_5">停</string>
+    <string name="basic_voice_order_6">开始</string>
+    <string name="basic_voice_max">(最大)</string>
+    <string name="basic_voice_pause">(暂停)</string>
+    <string name="classic_mode">经典模式</string>
+    <string name="dance_tips">舞起你的手机</string>
+    <string name="hand_draw_mode">手绘模式</string>
+    <string name="hand_draw_mode_tips">试试看,在图框内画出你想要的震动曲线然后点击播放键,不满意可以直接重画哦</string>
+    <string name="sing_mode">歌唱模式</string>
+    <string name="music_mode">音乐模式</string>
+    <string name="music_mode_operation_tips">左右滑动切换歌曲哦</string>
+    <string name="music_add">添加音乐</string>
+    <string name="music_add_done">完成</string>
+    <string name="video_mode">视频模式</string>
+    <string name="video_add">添加视频</string>
+    <string name="video_add_done">完成</string>
+    <string name="remote_mode">远程模式</string>
+    <string name="remote_mode_tips_title">你可以和别人远程建立一个私密视频聊天。\n此时，宝贝的震动，由对方说话声音的大小来控制。</string>
+    <string name="remote_mode_add">+创建远程私密连接</string>
+    <string name="remote_mode_link_prefix">我的常用连接</string>
+    <string name="remote_mode_edit">编辑</string>
+    <string name="remote_mode_cancel">取消</string>
+    <string name="remote_mode_link_max">常用连接最多五项，请删除一项后再创建</string>
+    <string name="remote_mode_null_connection_tips">需打开网络才能进行远程连接</string>
+    <string name="remote_mode_add_info_title">建立新私密连接</string>
+    <string name="remote_mode_next">下一步</string>
+    <string name="remote_mode_dialog_tips">提示</string>
+    <string name="remote_mode_dialog_len_massage">请输入8位数字</string>
+    <string name="remote_mode_send">发送</string>
+    <string name="remote_mode_send_title">发送短信</string>
+    <string name="remote_mode_send_dialog_message">请输入手机号码:</string>
+    <string name="remote_mode_send_wrong_number">请输入正确的手机号码</string>
+    <string name="remote_mode_message_content">邀请码为:<xliff:g id="version">%d</xliff:g></string>
+    <string name="remote_mode_sending">正在发送</string>
+    <string name="remote_mode_send_success">发送成功</string>
+    <string name="remote_mode_send_failed">发送失败</string>
+    <string name="remote_mode_weixin_not_installed">请安装微信</string>
+    <string name="remote_mode_name_tips">为新连接取一个响亮的名字!</string>
+    <string name="remote_mode_null_name_tips">请输入一个响亮的名字或者选择跳过</string>
+    <string name="remote_mode_skip">跳过</string>
+    <string name="remote_mode_ok">确定</string>
+    <string name="remote_mode_finish">完成</string>
+    <string name="remote_mode_launcher">I\'m邀请方,发送私密邀请码给对方</string>
+    <string name="remote_mode_receiver">I\'m受邀方,填写收到的邀请码</string>
+    <string name="remote_mode_invitation_code">邀请码</string>
+    <string name="remote_mode_send_to">发送给</string>
+    <string name="remote_mode_wrong_room_id">邀请码错误</string>
+    <string name="remote_mode_connect_message">正在等待Ta</string>
+    <string name="remote_mode_connect_message_enter">Ta轻轻地来了\n点击Ta头像开始视频</string>
+    <string name="remote_mode_connect_timeout">连接超时</string>
+    <string name="remote_mode_disconnect_message">网络断开</string>
+    <string name="remote_mode_person_video_interrupt">对方视频中断了</string>
+    <string name="remote_mode_person_audio_interrupt">对方音频中断了</string>
+    <string name="remote_mode_person_offline">对方已离开</string>
+    <string name="remote_mode_exit_remote">确定结束视频吗?</string>
+    <string name="remote_mode_secure_tips">远程视频数据加密后直接发给用户\n服务器仅做中转，不保留任何视频文件</string>
+    <string name="set_mode_app_check">APP版本更新</string>
+    <string name="set_mode_app_check_tips">需打开网络才能检查更新</string>
+    <string name="set_mode_apk_version">当前版本V<xliff:g id="version">%s</xliff:g></string>
+    <string name="set_mode_firmware_update">设备系统升级</string>
+    <string name="set_mode_firmware_version">当前设备系统版本<xliff:g id="version">%s</xliff:g></string>
+    <string name="set_mode_checking">正在检查更新</string>
+    <string name="set_mode_latest_version">没有更新</string>
+    <string name="set_mode_powered_by">技术支持:无锡宇宁光电科技有限公司</string>
+    <string name="dialog_battery_low_title">低电量提示</string>
+    <string name="dialog_battery_low_message">宝贝电量过低，请尽快充电!</string>
+    <string name="dialog_battery_extremely_low_title">低电量警告</string>
+    <string name="dialog_battery_extremely_low_message">宝贝电量很低，即将自动关闭，请尽快充电!</string>
+    <string name="scanning_device">正在搜索宝贝</string>
+    <string name="connecting_device">正在连接宝贝，请稍等</string>
+    <string name="find_multi_devices">检测到多个宝贝，请选择</string>
+    <string name="device_toy">宝贝</string>
+    <string name="device_has_been_connected">已连接过</string>
+    <string name="device_has_not_been_connected">未连接过</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="password_settings">访问密码设置</string>
+    <string name="password_tips">设置后,需输入密码才可以访问此APP</string>
+    <string name="password_open">打开密码</string>
+    <string name="password_close">关闭密码</string>
+    <string name="password_change">更改密码</string>
+    <string name="password_set">设置密码</string>
+    <string name="password_input">输入密码</string>
+    <string name="password_input_please">请输入密码</string>
+    <string name="password_input_again_please">请再次输入密码</string>
+    <string name="password_input_old_please">请输入旧密码</string>
+    <string name="password_input_new_please">请输入新密码</string>
+    <string name="password_input_new_again_please">请再次输入新密码</string>
+    <string name="password_input_again_wrong_please">密码不匹配,请再试一次</string>
+    <string name="password_input_one_minute_retry">请一分钟后再试</string>
+    <string name="password_input_error"><xliff:g id="number">%d</xliff:g> 次密码输入错误</string>
+    <string name="shopping_tips"><u>更多美妙精彩!</u></string>
+    <string name="shopping_title">商品列表</string>
+    <string name="shopping_loading">正在加载</string>
+</resources>

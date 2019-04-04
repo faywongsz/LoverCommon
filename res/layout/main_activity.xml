@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main">
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="120" >
+
+	        <TextView
+	            android:id="@+id/product_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:text="@string/product_name"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/text_size_large" />
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="@dimen/layout_margin"
+	            android:contentDescription="@null" >
+
+	            <ImageView
+	                android:id="@+id/main_settings"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@null"
+	                android:onClick="onBtnEnterSet"
+	                android:src="@drawable/main_settings_selector" />
+
+	            <ImageView
+	                android:id="@+id/main_settings_tips"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@null"
+	                android:src="@drawable/main_settings_tips"
+	                android:visibility="invisible" />
+	        </LinearLayout>
+	    </RelativeLayout>
+
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="160" />
+
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="800" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal" >
+
+	            <View
+	                android:layout_width="0px"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1" />
+
+	            <com.yuning.ui.SquareLinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="10" >
+
+	                <LinearLayout
+	                    android:layout_width="0px"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="10"
+	                    android:orientation="vertical" >
+	                    <View
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1" />
+	                    <ImageView
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1"
+	                        android:contentDescription="@null"
+	                        android:onClick="onEnterClassicMode"
+	                        android:src="@drawable/main_classic_mode_selector" />
+	                    <View
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1" />
+	                </LinearLayout>
+
+	                <View
+	                    android:layout_width="@dimen/main_mode_layout_margin"
+	                    android:layout_height="fill_parent" />
+
+	                <LinearLayout
+	                    android:layout_width="0px"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="10"
+	                    android:orientation="vertical" >
+	                    <ImageView
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1"
+	                        android:contentDescription="@null"
+	                        android:onClick="onEnterPersonalMode"
+	                        android:src="@drawable/main_personal_mode_selector" />
+		                <View
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="@dimen/main_mode_layout_margin" />
+	                    <ImageView
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1"
+	                        android:contentDescription="@null"
+	                        android:onClick="onEnterBasicMode"
+	                        android:src="@drawable/main_basic_mode_selector" />
+		                <View
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="@dimen/main_mode_layout_margin" />
+	                    <ImageView
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1"
+	                        android:contentDescription="@null"
+	                        android:gravity="bottom"
+	                        android:onClick="onEnterEntertainmentMode"
+	                        android:src="@drawable/main_entertainment_mode_selector" />
+	                </LinearLayout>
+
+	                <View
+	                    android:layout_width="@dimen/main_mode_layout_margin"
+	                    android:layout_height="fill_parent" />
+
+	                <LinearLayout
+	                    android:layout_width="0px"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="10"
+	                    android:orientation="vertical" >
+	                    <View
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1" />
+	                    <ImageView
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1"
+	                        android:contentDescription="@null"
+	                        android:onClick="onEnterRemoteMode"
+	                        android:src="@drawable/main_remote_mode_selector" />
+	                    <View
+	                        android:layout_width="match_parent"
+	                        android:layout_height="0px"
+	                        android:layout_weight="1" />
+	                </LinearLayout>
+	            </com.yuning.ui.SquareLinearLayout>
+
+	            <View
+	                android:layout_width="0px"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1" />
+	        </LinearLayout>
+	    </FrameLayout>
+
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="60" />
+
+	    <LinearLayout
+	        android:id="@+id/shopping_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="100"
+	        android:onClick="onEnterShopping"
+	        android:gravity="right" >
+	        <TextView
+	            android:id="@+id/shopping_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:text="@string/shopping_tips"
+	            android:textSize="@dimen/text_size_small"
+	            android:textColor="@color/shopping_text" />
+	        <ImageView
+	            android:id="@+id/shopping_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_marginLeft="2dip"
+	            android:layout_marginRight="2dip"
+	            android:src="@drawable/shopping"
+	            android:contentDescription="@null" />	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="60" >
+	        <ImageView
+	            android:id="@+id/bat_level"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:src="@drawable/battery_level_high"
+	            android:contentDescription="@null" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0px"
+	        android:layout_weight="200"
+	        android:onClick="onBtnScan" >
+
+	        <LinearLayout
+	            android:layout_width="0px"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="219"
+	            android:orientation="vertical" >
+
+	            <View
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="58" />
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="120" >
+
+	                <View
+	                    android:layout_width="0px"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="58" />
+
+	                <RelativeLayout
+	                    android:layout_width="0px"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="123" >
+
+	                    <ProgressBar
+	                        android:id="@+id/gatt_scan_progress"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_centerInParent="true"
+	                        android:indeterminateDrawable="@drawable/index_foot_progress_anim"
+	                        android:visibility="gone" />
+
+	                    <ImageView
+	                        android:id="@+id/gatt_scan_searched"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="fill_parent"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/index_foot_scan_connected" />
+	                </RelativeLayout>
+
+	                <View
+	                    android:layout_width="0px"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="38" />
+	            </LinearLayout>
+
+	            <View
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="59" />
+	        </LinearLayout>
+
+	        <RelativeLayout
+	            android:layout_width="0px"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="642" >
+
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:gravity="center" >
+
+	                <TextView
+	                    android:id="@+id/main_connect_state"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:text="@string/main_connect_state_shake"
+	                    android:textColor="@color/white"
+	                    android:textSize="@dimen/main_connect_state_text_size" />
+
+	                <GridView
+	                    android:id="@+id/gatt_device_list"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_centerInParent="true"
+	                    android:columnWidth="90dp"
+	                    android:horizontalSpacing="10dp"
+	                    android:numColumns="auto_fit"
+	                    android:stretchMode="columnWidth"
+	                    android:verticalSpacing="10dp"
+	                    android:visibility="gone" />
+	            </LinearLayout>
+	        </RelativeLayout>
+
+	        <LinearLayout
+	            android:layout_width="0px"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="219"
+	            android:orientation="vertical" >
+
+	            <View
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="58" />
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="120" >
+
+	                <View
+	                    android:layout_width="0px"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="38" />
+
+	                <Button
+	                    android:id="@+id/gatt_connect_flag"
+	                    android:layout_width="0px"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="123"
+	                    android:onClick="disconnectDevice"
+	                    android:background="@drawable/index_foot_disconnected"
+	                    android:text="@string/close_device"
+	                    android:textColor="#ffb8a7a7"
+	                    android:textSize="@dimen/text_size_small" />
+
+	                <View
+	                    android:layout_width="0px"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="58" />
+	            </LinearLayout>
+
+	            <View
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="59" />
+	        </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+
+</FrameLayout>

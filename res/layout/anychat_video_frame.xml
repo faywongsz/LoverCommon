@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remote_mode_video_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/anychat_video_session"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="#7f7f7f"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/endCall"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/anychat_button_background"
+            android:onClick="onEndCall"
+            android:text="@string/endCall1"
+            android:textColor="#ffffff" />     
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+        
+        <ImageButton
+            android:id="@+id/btn_speakControl"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/anychat_button_background"
+            android:src="@drawable/anychat_speak_on"/>
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+        
+        <ImageButton
+            android:id="@+id/btn_cameraControl"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/anychat_button_background"
+            android:src="@drawable/anychat_camera_on"/>
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/ImgSwichVideo"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/anychat_button_background"
+            android:src="@drawable/anychat_switchvideo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remote_mode_video_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dip" >
+
+        <ImageView
+            android:id="@+id/remote_mode_camera_switch"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/remote_mode_camera_switch_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/remote_mode_video_end"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/remote_mode_video_end_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/remote_mode_speaker_ctrl"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/remote_mode_speaker_on_selector"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+</FrameLayout>

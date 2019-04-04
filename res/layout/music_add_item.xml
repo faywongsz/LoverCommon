@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/layout_margin"
+    android:paddingRight="@dimen/layout_margin" >
+
+    <CheckBox
+        android:id="@+id/check_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_selector"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_toRightOf="@+id/check_add"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/set_mode_item_text_color"
+            android:textSize="@dimen/text_size_medium"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/item_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/set_mode_item_text_color"
+            android:textSize="@dimen/text_size_medium"
+            android:text="" />
+    </LinearLayout>
+
+</RelativeLayout>

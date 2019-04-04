@@ -1,0 +1,22 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<ESRGrammar>
+	<scene name="menu">		
+		<sentence name="call" ID="1001">
+			<listref ref="cmdlist" />
+		</sentence>
+	</scene>
+	<list name="cmdlist">
+		<word ID="5">打开</word>
+		<word ID="6">关闭</word>
+		<word ID="7">增大</word>	
+		<word ID="8">增大增大</word>		
+		<word ID="9">增大增大增大</word>	
+		<word ID="10">增大增大增大增大</word>		
+		<word ID="11">增大增大增大增大增大</word>			
+		<word ID="12">减小</word>	
+		<word ID="13">减小减小</word>		
+		<word ID="14">减小减小减小</word>	
+		<word ID="15">减小减小减小减小</word>	
+		<word ID="16">减小减小减小减小减小</word>	
+	</list>	
+</ESRGrammar>

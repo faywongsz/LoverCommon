@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="screen_width">480dp</dimen>
+    <dimen name="screen_height">800dp</dimen>
+    <dimen name="big_cell_width">336dp</dimen>  
+    <dimen name="big_cell_height">306dp</dimen>  
+    <dimen name="small_cell_width">162dip</dimen>     
+    <dimen name="small_cell_height">100dip</dimen>   
+    <dimen name="icon_padding">12dp</dimen>
+  
+    <dimen name="tab_height">60dp</dimen>      
+    <dimen name="tab_text_padding">10dp</dimen>   
+    
+    <dimen name="item_padding_top">10dp</dimen>      
+    <dimen name="item_padding_left">10dp</dimen>  
+    <dimen name="item_text_size">20sp</dimen>      
+    
+    <dimen name="visualizer_view_width">480dp</dimen>  
+    <dimen name="visualizer_view_heigh">320dp</dimen>   
+    
+    <dimen name="tab_icon_text_size">12sp</dimen>    
+    <dimen name="set_mode_item_height">70dp</dimen>
+    <dimen name="set_mode_item_text_size">16dp</dimen>
+    <dimen name="set_mode_item_text_size_small">12dp</dimen>
+    <dimen name="dance_mode_help_text_size">18sp</dimen>
+    <dimen name="voicectr_yuancheng_info_text_size">12sp</dimen>
+    <dimen name="zhendong_item_text_size">12sp</dimen>
+    <dimen name="music_mode_name_text_size">18sp</dimen>
+    <dimen name="video_mode_time_text_size">8sp</dimen>
+    <dimen name="video_mode_list_item_name_text_size">18dp</dimen>
+    <dimen name="video_mode_list_item_time_text_size">12dp</dimen>
+    <dimen name="custom_draw_mode_text_size">14dp</dimen>
+    <dimen name="ai_talk_text_margin">25dp</dimen>
+    <dimen name="yaoyiyao_item_text_size">18sp</dimen>
+    <dimen name="main_connect_state_text_size">16sp</dimen>
+    <dimen name="battery_mode_item_text_size">18sp</dimen>
+    
+    <dimen name="main_mode_layout_margin">10dip</dimen> 
+    <dimen name="layout_margin">10dip</dimen>    
+    <dimen name="text_size_large">20dp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+    <dimen name="text_size_small">14dp</dimen>
+    
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="dialog_title_height">45dp</dimen>
+    <dimen name="arc_menu_child_size">64dp</dimen>
+</resources>

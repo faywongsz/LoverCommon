@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/background_common" >
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dip"
+		        android:layout_weight="1"/>
+		    
+			<FrameLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="0dip"
+			    android:layout_weight="12" >
+				
+			    <com.yuning.ui.MusicCoverWorkspace
+			        android:id="@+id/music_cover_workspace"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+			        
+				    <include layout="@layout/music_cover"/>
+				    
+			    </com.yuning.ui.MusicCoverWorkspace>
+
+			</FrameLayout>
+
+			<RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="0dip"
+			    android:layout_weight="2" >
+
+			    <TextView
+			        android:id="@+id/music_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:textColor="@color/deep_pink"
+			        android:textSize="@dimen/text_size_medium" />
+
+			    <TextView
+			        android:id="@+id/music_artist"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/music_title"
+			        android:layout_centerHorizontal="true"
+			        android:textColor="@color/pink"
+			        android:textSize="@dimen/text_size_small" />
+			</RelativeLayout>
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="0dip"
+			    android:layout_weight="7"
+			    android:background="@drawable/background_music_bottom"
+			    android:orientation="vertical" >
+			
+				<View 
+				    android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="1" />
+				
+				<LinearLayout
+				    android:id="@+id/music_seekbar_layout"
+				    android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="4"
+				    android:orientation="vertical" >
+					<RelativeLayout
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content">
+					    <TextView
+					        android:id="@+id/music_play_time"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:paddingLeft="2dip"
+					        android:textColor="@color/pink"
+					        android:textSize="@dimen/text_size_medium" />
+	
+					    <TextView
+					        android:id="@+id/music_duration"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentRight="true"
+					        android:paddingRight="2dip"
+					        android:textColor="@color/pink"
+					        android:textSize="@dimen/text_size_small" />
+					</RelativeLayout>
+	
+					<SeekBar
+					    android:id="@+id/music_seekbar"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:minHeight="14dip"
+					    android:maxHeight="14dip"
+					    android:progressDrawable="@drawable/music_seekbar"
+					    android:thumb="@drawable/music_seekbar_thumb"
+					    android:thumbOffset="0dip" />
+				</LinearLayout>			
+	
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="10" >
+				    <View 
+				        android:layout_width="0px"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"/>
+				    <ImageView
+				        android:id="@+id/music_prev"
+				        android:layout_width="0px"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_gravity="center"
+				        android:contentDescription="@null"
+				        android:src="@drawable/music_prev_selector" />
+				    <ImageView
+				        android:id="@+id/music_operation"
+				        android:layout_width="0px"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="2"
+				        android:layout_gravity="center"
+				        android:contentDescription="@null"
+				        android:src="@drawable/music_play_selector" />
+				    <ImageView
+				        android:id="@+id/music_next"
+				        android:layout_width="0px"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_gravity="center"
+				        android:contentDescription="@null"
+				        android:src="@drawable/music_next_selector" />
+				    <View 
+				        android:layout_width="0px"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"/>
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+
+		<RelativeLayout
+		    android:id="@+id/music_tips"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:visibility="gone" >
+			<ImageView
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:contentDescription="@null"
+			    android:src="@drawable/music_tips"
+			    android:scaleType="fitXY" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginBottom="40dip"
+			    android:text="@string/music_mode_operation_tips"
+			    android:textSize="@dimen/text_size_large"
+			    android:textColor="@color/white" />
+		</RelativeLayout>
+
+	</FrameLayout>
+	
+</LinearLayout>
